@@ -21,7 +21,8 @@ import sys
 pytesseract.pytesseract.tesseract_cmd = r'/opt/homebrew/bin/tesseract'
 
 def text_to_txt_file(text, file_name):
-    with open(file_name, "w") as f:
+    path = "./txt/" + file_name
+    with open(path, "w") as f:
         f.write(text)
     
 def img_to_text(argv):
