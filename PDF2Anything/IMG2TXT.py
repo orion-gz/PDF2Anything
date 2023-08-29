@@ -24,7 +24,7 @@ def text_to_txt_file(text, file_name):
     with open(file_name, "w") as f:
         f.write(text)
     
-def main(argv):
+def img_to_text(argv):
     text = ""
 
     # Sort the files using natsorted function.
@@ -43,4 +43,4 @@ def main(argv):
         text_to_txt_file(text, "*.txt")
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    img_to_text(sys.argv[1:])
